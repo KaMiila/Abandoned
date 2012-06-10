@@ -1,0 +1,34 @@
+The Berkeley Open Infrastructure for Network Computing (BOINC)
+
+is an open source middleware system for volunteer and grid computing. It was
+originally developed to support the SETI@home project before it became useful
+as a platform for other distributed applications in areas as diverse as
+mathematics, medicine, molecular biology, climatology, and astrophysics. The
+intent of BOINC is to make it possible for researchers to tap into the 
+enormous processing power of personal computers around the world.
+
+Use the idle time on your computer (Windows, Mac, or Linux) to cure diseases,
+study global warming, discover pulsars, and do many other types of scientific
+research. It's safe, secure, and easy.
+
+After installation you need to join a BOINC project:
+  http://boinc.berkeley.edu/projects.php
+
+To start BOINC create a directory for BOINC to use, navigate to that directory
+and run:
+   boinc_client -help
+
+This will print out all the usage commands for running BOINC.
+
+Furthermore:
+  On your project website, once logged in, you can tell the project server
+how it should use your computer (under computing preferences on your profile).
+
+I suggest you use a temperature monitoring program while running BOINC.
+  
+Have fun and join team "Slackware" on Milkyway@home:
+
+
+Reference:
+https://en.wikipedia.org/wiki/Berkeley_Open_Infrastructure_for_Network_Computing
+http://boinc.berkeley.edu/
