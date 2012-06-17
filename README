@@ -11,6 +11,20 @@ Use the idle time on your computer (Windows, Mac, or Linux) to cure diseases,
 study global warming, discover pulsars, and do many other types of scientific
 research. It's safe, secure, and easy.
 
+Howto:  first, lets make sure we are in a true root shell
+
+  su -
+
+Then compile and install the dependencies (all can be found on http://slackbuilds.org)
+
+Then chmod +x Boinc.SlackBuild
+
+./Boinc.Slackbuild
+
+(don't forget to install the package which is now located in /tmp)
+
+installpkg (pkgname)
+
 After installation you need to join a BOINC project:
   http://boinc.berkeley.edu/projects.php
 
@@ -28,6 +42,7 @@ I suggest you use a temperature monitoring program while running BOINC.
   
 Have fun and join team "Slackware" on Milkyway@home:
 
+DEPENDENCIES:  wxGTK
 
 Reference:
 https://en.wikipedia.org/wiki/Berkeley_Open_Infrastructure_for_Network_Computing
