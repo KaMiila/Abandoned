@@ -28,7 +28,10 @@ installpkg (pkgname)
 After installation you need to join a BOINC project:
   http://boinc.berkeley.edu/projects.php
 
-To start BOINC create a directory for BOINC to use, navigate to that directory
+To start BOINC in gui, run:
+   boincmgr
+
+To start BOINC in cli create a directory for BOINC to use, navigate to that directory
 and run:
    boinc_client -help
 
@@ -42,7 +45,11 @@ I suggest you use a temperature monitoring program while running BOINC.
   
 Have fun and join team "Slackware" on Milkyway@home:
 
+<<<<<<< HEAD
 DEPENDENCIES:  wxGTK
+=======
+TODO:  Create a .desktop file to add a BOINC menu option to the launcher of your favorite DE/WM
+>>>>>>> be17d34344e46bf4641df89c4a873d8fac4364e2
 
 Reference:
 https://en.wikipedia.org/wiki/Berkeley_Open_Infrastructure_for_Network_Computing
