@@ -45,11 +45,9 @@ I suggest you use a temperature monitoring program while running BOINC.
   
 Have fun and join team "Slackware" on Milkyway@home:
 
-<<<<<<< HEAD
 DEPENDENCIES:  wxGTK
 =======
 TODO:  Create a .desktop file to add a BOINC menu option to the launcher of your favorite DE/WM
->>>>>>> be17d34344e46bf4641df89c4a873d8fac4364e2
 
 Reference:
 https://en.wikipedia.org/wiki/Berkeley_Open_Infrastructure_for_Network_Computing
