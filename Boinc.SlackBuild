@@ -86,8 +86,8 @@ CXXFLAGS="$SLKCFLAGS" \
   --disable-server \
   --enable-client \
   --disable-shared \
-  --disable-manager \
-  --without-x \
+  --enable-manager \
+  --with-x \
   --build=$ARCH-slackware-linux
 
 make

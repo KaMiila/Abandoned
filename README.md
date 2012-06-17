@@ -1,4 +1,0 @@
-BOINC-SlackBuild
-================
-
-BOINC-SlackBuild
