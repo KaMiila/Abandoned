@@ -1,5 +1,7 @@
 The Berkeley Open Infrastructure for Network Computing (BOINC)
 
+Works on Slackware 13.37 and 14.0
+
 is an open source middleware system for volunteer and grid computing. It was
 originally developed to support the SETI@home project before it became useful
 as a platform for other distributed applications in areas as diverse as
