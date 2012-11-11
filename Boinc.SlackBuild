@@ -63,11 +63,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-<<<<<<< HEAD
 svn co http://boinc.berkeley.edu/svn/tags/boinc_core_release_7_0_36 $TMP/$PRGNAM-$VERSION
-=======
-svn co http://boinc.berkeley.edu/svn/tags/boinc_core_release_7_0_28 $TMP/$PRGNAM-$VERSION
->>>>>>> adef016751f2d113d8f69e4ea862bf08be38ac32
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find . \
@@ -105,7 +101,6 @@ cp -a \
   COPYING COPYRIGHT INSTALL todo notes \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
-<<<<<<< HEAD
 mkdir -p $PKG/usr/share/{applications,pixmaps}
 cp $CWD/boinc.png $PKG/usr/share/pixmaps
 cp $CWD/Boinc.desktop $PKG/usr/share/applications
@@ -114,11 +109,6 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/boincgui.sh > $PKG/usr/bin/boincgui.sh
 chmod +x $PKG/usr/bin/boincgui.sh
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
-=======
-
-mkdir -p $PKG/install
-cat $CWD/slack-desc > $PKG/install/slack-desc
->>>>>>> adef016751f2d113d8f69e4ea862bf08be38ac32
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
