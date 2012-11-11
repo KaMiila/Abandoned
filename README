@@ -1,5 +1,10 @@
 The Berkeley Open Infrastructure for Network Computing (BOINC)
 
+<<<<<<< HEAD
+=======
+Works on Slackware 13.37 and 14.0
+
+>>>>>>> adef016751f2d113d8f69e4ea862bf08be38ac32
 is an open source middleware system for volunteer and grid computing. It was
 originally developed to support the SETI@home project before it became useful
 as a platform for other distributed applications in areas as diverse as
@@ -27,6 +32,7 @@ installpkg (pkgname)
 
 After installation you need to join a BOINC project:
   http://boinc.berkeley.edu/projects.php
+<<<<<<< HEAD
   You might beable to join projects directly from the gui now, but I am not sure if you need to
   create a user name and password.  When in doubt, initialize everything on the above link.
 
@@ -42,6 +48,15 @@ To start BOINC in gui, run:
 To start BOINC in cli create a directory for BOINC to use, navigate to that directory
 and run:
    boinccmd -help
+=======
+
+To start BOINC in gui, run:
+   boincmgr
+
+To start BOINC in cli create a directory for BOINC to use, navigate to that directory
+and run:
+   boinc_client -help
+>>>>>>> adef016751f2d113d8f69e4ea862bf08be38ac32
 
 This will print out all the usage commands for running BOINC.
 
@@ -50,19 +65,26 @@ Furthermore:
 how it should use your computer (under computing preferences on your profile).
 
 I suggest you use a temperature monitoring program while running BOINC.
+<<<<<<< HEAD
 
 There does exist an init script which is placed in /etc/init.d
   I decided against removing it because some may actually want it.  This script (if moved to /etc/rc.d and set to executable)
   will run boinc as a daemon when the system is booted.  I personally do not want this and feel it is a bad direction for
   slackware machines, which is why I have kept it in the original /etc/init.d directory.  I have never tested it, nor do I have
   any plans to do so.
+=======
+>>>>>>> adef016751f2d113d8f69e4ea862bf08be38ac32
   
 Have fun and join team "Slackware" on Milkyway@home:
 
 DEPENDENCIES:  wxGTK
 =======
+<<<<<<< HEAD
 KNOWN BUGS:
       It appears since 7.0.26 there is a bug when trying to do some folding with the GPU.  This will result in error messages being posted in the shell (if you are running from the shell in debug mode boinc_client).  The messages complain about opencl not being available from nvidia drivers.  From reading on message boards this is affecting not only linux but windows systems since 7.0.26.  If you wish, you can downgrade to 7.0.25 but be warned there is an apparent security risk in doing this.  Let us hope the devs at BOINC will fix the issue in the near future.  GPU folding still works, but it sometimes fails.
+=======
+TODO:  Create a .desktop file to add a BOINC menu option to the launcher of your favorite DE/WM
+>>>>>>> adef016751f2d113d8f69e4ea862bf08be38ac32
 
 Reference:
 https://en.wikipedia.org/wiki/Berkeley_Open_Infrastructure_for_Network_Computing
