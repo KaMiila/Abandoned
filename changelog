@@ -1,0 +1,13 @@
+Saturday November 10 20:36 PST 2012
+	Upgraded Boinc to 7.0.36
+	Added .desktop file (for menu launcher)
+	Added icons for the menu launcher
+	Created a boincgui.sh script (thanks wood_quinn for the help)
+	Added a changelog (really should have done this from the start)
+	Calling this SBO stable (no longer beta. YAY!)
+	Updated README file to address the changes
+	Added a doinst.sh script so the menu launcher activates during install
++--------------------------+
+	Happy folding!
+	e-mail KaMii:  lacielacie (at) rocketmail (dot) com
+	or you can find me on irc.freenode.com ##slackware #YHBT

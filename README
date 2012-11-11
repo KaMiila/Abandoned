@@ -1,0 +1,69 @@
+The Berkeley Open Infrastructure for Network Computing (BOINC)
+
+is an open source middleware system for volunteer and grid computing. It was
+originally developed to support the SETI@home project before it became useful
+as a platform for other distributed applications in areas as diverse as
+mathematics, medicine, molecular biology, climatology, and astrophysics. The
+intent of BOINC is to make it possible for researchers to tap into the 
+enormous processing power of personal computers around the world.
+
+Use the idle time on your computer (Windows, Mac, or Linux) to cure diseases,
+study global warming, discover pulsars, and do many other types of scientific
+research. It's safe, secure, and easy.
+
+Howto:  first, lets make sure we are in a true root shell
+
+  su -
+
+Then compile and install the dependencies (all can be found on http://slackbuilds.org)
+
+Then chmod +x Boinc.SlackBuild
+
+./Boinc.Slackbuild
+
+(don't forget to install the package which is now located in /tmp)
+
+installpkg (pkgname)
+
+After installation you need to join a BOINC project:
+  http://boinc.berkeley.edu/projects.php
+  You might beable to join projects directly from the gui now, but I am not sure if you need to
+  create a user name and password.  When in doubt, initialize everything on the above link.
+
+****IMPORTANT STEP****
+  BEFORE RUNNING BOINCGUI:  Drop into a root shell and edit /usr/bin/boincgui.sh
+  DO NOT FORGET TO SET THE WORKING DIRECTORY OR BOINC WILL NOT WORK
+  This step is only required if you are going to run the gui from boincgui.sh
+****IMPORTANT STEP***
+
+To start BOINC in gui, run:
+   boincgui
+
+To start BOINC in cli create a directory for BOINC to use, navigate to that directory
+and run:
+   boinccmd -help
+
+This will print out all the usage commands for running BOINC.
+
+Furthermore:
+  On your project website, once logged in, you can tell the project server
+how it should use your computer (under computing preferences on your profile).
+
+I suggest you use a temperature monitoring program while running BOINC.
+
+There does exist an init script which is placed in /etc/init.d
+  I decided against removing it because some may actually want it.  This script (if moved to /etc/rc.d and set to executable)
+  will run boinc as a daemon when the system is booted.  I personally do not want this and feel it is a bad direction for
+  slackware machines, which is why I have kept it in the original /etc/init.d directory.  I have never tested it, nor do I have
+  any plans to do so.
+  
+Have fun and join team "Slackware" on Milkyway@home:
+
+DEPENDENCIES:  wxGTK
+=======
+KNOWN BUGS:
+      It appears since 7.0.26 there is a bug when trying to do some folding with the GPU.  This will result in error messages being posted in the shell (if you are running from the shell in debug mode boinc_client).  The messages complain about opencl not being available from nvidia drivers.  From reading on message boards this is affecting not only linux but windows systems since 7.0.26.  If you wish, you can downgrade to 7.0.25 but be warned there is an apparent security risk in doing this.  Let us hope the devs at BOINC will fix the issue in the near future.  GPU folding still works, but it sometimes fails.
+
+Reference:
+https://en.wikipedia.org/wiki/Berkeley_Open_Infrastructure_for_Network_Computing
+http://boinc.berkeley.edu/
