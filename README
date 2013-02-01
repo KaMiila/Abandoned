@@ -62,7 +62,6 @@ Have fun and join team "Slackware" on Milkyway@home:
 DEPENDENCIES:  wxGTK
 =======
 KNOWN BUGS:
-      It appears since 7.0.26 there is a bug when trying to do some folding with the GPU.  This will result in error messages being posted in the shell (if you are running from the shell in debug mode boinc_client).  The messages complain about opencl not being available from nvidia drivers.  From reading on message boards this is affecting not only linux but windows systems since 7.0.26.  If you wish, you can downgrade to 7.0.25 but be warned there is an apparent security risk in doing this.  Let us hope the devs at BOINC will fix the issue in the near future.  GPU folding still works, but it sometimes fails.
 
 Reference:
 https://en.wikipedia.org/wiki/Berkeley_Open_Infrastructure_for_Network_Computing
