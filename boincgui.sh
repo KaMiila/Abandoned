@@ -2,7 +2,7 @@
 
 #Edit the following line!  This will set the working directory for Boinc. Use a full path and make sure your user has write access to that folder!
 
-workdir=
+workdir=/home/pulsar/boinc
 
 #Sanity Check
 

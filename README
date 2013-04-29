@@ -61,7 +61,7 @@ Have fun and join team "Slackware" on Milkyway@home:
 
 The best way to get ahold of me is on irc.  I'm always on irc.freenode.com in the ##slackware channel, nickname KaMii.  If I do not answer I am afk.  But it is a very helpful room, so I am sure someone will help you out if I'm unavailable.
 
-DEPENDENCIES:  wxGTK
+DEPENDENCIES:  wxGTK (for GUI only)
 =======
 KNOWN BUGS:
 

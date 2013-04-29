@@ -24,9 +24,9 @@
 
 PRGNAM=Boinc
 DATE=$(date +%Y%m%d)
-VERSION=${VERSION:-7.0.36}
+VERSION=${VERSION:-git$DATE}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
+TAG=${TAG:-_KaMii}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -63,7 +63,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-svn co http://boinc.berkeley.edu/svn/tags/boinc_core_release_7_0_36 $TMP/$PRGNAM-$VERSION
+git clone git://boinc.berkeley.edu/boinc-v2.git $TMP/$PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find . \
